@@ -48,7 +48,7 @@ public class Vigenere {
 
             int posizioneChiave = getPosizione(chiave.charAt(i % chiave.length()));
             for(int j = 0; j < 26; j++){
-                if(matrice[posizioneChiave][j] == testo.charAt(i % chiave.length())){
+                if(matrice[j][posizioneChiave] == Character.toLowerCase(testo.charAt(i))){
                     if(maiusc)
                         decriptato += Character.toUpperCase(alfabeto[j]);
                     else
