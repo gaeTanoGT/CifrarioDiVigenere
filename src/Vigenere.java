@@ -62,18 +62,11 @@ public class Vigenere {
     }
 
     private int getPosizioneChiave(int posizioneDellaChiave, String chiave){
+
+
         char carattere = chiave.charAt(posizioneDellaChiave);
 
-        int i = 0;
-
-        for(Character c : alfabeto){
-            if(c.equals(carattere)){
-                return i;
-            }
-            i++;
-        }
-
-        return -1;
+        return (int)(carattere - 'a');
     }
 
     private int getPosizione(char carattere){
