@@ -70,6 +70,9 @@ public class Vigenere {
     }
 
     private int getPosizione(char carattere){
+
+        return (int)(carattere - 'a');
+        /*
         int i = 0;
 
         for(Character c : alfabeto){
@@ -79,7 +82,7 @@ public class Vigenere {
             i++;
         }
 
-        return -1;
+        return -1;*/
     }
 
     private void popolaMatrice(){
